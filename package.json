@@ -1,0 +1,19 @@
+{
+  "name": "rikleimt",
+  "version": "0.0.1",
+  "description": "Rikleimt website",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [],
+  "author": "Clexa Rikleimt",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

@@ -1,0 +1,9 @@
+flask
+jinja2
+werkzeug
+wtforms
+sqlalchemy
+flask-sqlalchemy
+flask-assets
+webassets
+pyscss

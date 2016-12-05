@@ -1,0 +1,79 @@
+.intro {
+  color: white;
+  font-family: $league-body-font, sans-serif;
+  height: 0px;
+  font-size: 35px;
+  letter-spacing: 2px;
+
+  .first {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    animation-name: hide, fadein;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 0s;
+  }
+
+  .second {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    animation-name: hide, fadein;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 5s;
+  }
+
+  .third {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    animation-name: hide, fadein;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 10s;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .intro {
+    font-size: 60px;
+
+    .first, .second, .third {
+      top: 300px;
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+}
+
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}

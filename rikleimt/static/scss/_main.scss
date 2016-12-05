@@ -1,0 +1,68 @@
+.main {
+  animation-name: hide, fadein-main;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0s, 15s;
+  color: white;
+  letter-spacing: 2px;
+
+  .main-image {
+    text-align: center;
+
+    img {
+      width: 250px;
+    }
+  }
+
+  .tagline {
+    text-align: center;
+    font-family: $league-body-font, sans-serif;
+    font-size: 40px;
+  }
+
+  .coming-soon {
+    color: white;
+    text-align: center;
+    font-family: $league-header-font, sans-serif;
+    font-size: 32px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+  .main {
+    .main-image {
+      img {
+        width: 450px;
+      }
+    }
+
+    .tagline {
+      font-family: $league-body-font, sans-serif;
+      font-size: 65px;
+    }
+
+    .coming-soon {
+      font-family: $league-header-font, sans-serif;
+      font-size: 48px;
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+}
+
+@keyframes fadein-main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

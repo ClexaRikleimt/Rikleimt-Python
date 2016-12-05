@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock title %}</title>
+
+        {% assets 'css_vendor' %}
+            <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+        {% endassets %}
+        {% assets 'scss_app' %}
+            <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+        {% endassets %}
+
+        {% block head_content %}
+        {% endblock head_content %}
+    </head>
+
+    <body>
+        <div id="container">
+            {% block page_header %}
+            {% endblock page_header %}
+
+            {# TODO (?) Add flashes block here [Arlena] #}
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </div>
+
+        {% assets 'js_vendor' %}
+            <script type="application/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+
+        {% block footer_content %}
+        {% endblock footer_content %}
+    </body>
+</html>
