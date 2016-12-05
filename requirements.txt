@@ -1,3 +1,4 @@
+gunicorn
 flask
 jinja2
 werkzeug

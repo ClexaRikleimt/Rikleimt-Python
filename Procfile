@@ -1,1 +1,1 @@
-web: gunicorn rikleimt.wsgi --log-file -
+web: gunicorn rikleimt:app --log-file -
