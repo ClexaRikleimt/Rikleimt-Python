@@ -39,3 +39,17 @@
               </div>
             </div>
 {% endblock content %}
+
+{% block footer_content %}
+    <script type="application/javascript">
+        $(document).ready(function () {
+            var widgetIframe = document.getElementById('sc-widget'),
+                widget       = SC.Widget(widgetIframe);
+
+            widget.bind(SC.Widget.Events.READY, function() {
+                // set new volume level
+                widget.setVolume(0.3);
+            });
+        })
+    </script>
+{% endblock footer_content %}
