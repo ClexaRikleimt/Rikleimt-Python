@@ -1,6 +1,8 @@
 # encoding=utf-8
-from rikleimt import db
+from flask_sqlalchemy import SQLAlchemy
 
+
+db = SQLAlchemy()
 
 user_role = db.Table(
     'usersToRoles',
